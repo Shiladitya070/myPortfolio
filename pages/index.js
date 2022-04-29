@@ -30,7 +30,7 @@ export default function Home() {
       </div>
 
       <div id="youtube" className={styles.youtube}>
-        Youtube
+        Still in development...
       </div>
 
     </div>
