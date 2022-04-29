@@ -1,0 +1,119 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: #202020;
+  color: #e9e9e9;
+  justify-content: space-around
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+  font-size: 35px;
+
+}
+
+.navbar>div:first-child {
+  margin-right: auto;
+}
+
+.navbar a:hover {
+  text-decoration: dashed;
+  color: rgb(255, 105, 105);
+  -webkit-transition: all 0.0001s ease;
+  transition: all 1s ease;
+}
+
+.navbar>div:nth-child(3) {
+  margin: 0 10px;
+}
+
+.navbar a {
+  padding: 5px;
+  background-color: #000;
+}
+
+.navbar a {
+  margin: 20px;
+}
+
+.glow {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: glow 1s infinite alternate;
+  animation-timing-function: linear;
+}
+
+
+.wave {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(0deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 226px;
+}
+
+.youtube {
+  background-color: #ff6969;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  font-size:50px;
+
+  align-items: center;
+
+}
+
+@keyframes glow {
+  from {
+    box-shadow:
+      inset 0 0 50px rgb(249, 45, 45),
+      inset 20px 0 80px rgb(255, 0, 0),
+
+      inset -20px 0 80px rgb(255, 194, 80),
+
+      inset 20px 0 300px rgb(255, 0, 0),
+
+      inset -20px 0 300px rgb(255, 194, 80),
+
+      0 0 50px rgb(249, 45, 45),
+      -10px 0 80px rgb(255, 0, 0),
+
+      10px 0 80px rgb(255, 194, 80);
+  }
+
+  to {
+    box-shadow:
+      inset 0 0 50px rgb(80, 109, 255),
+      inset 20px 0 80px rgb(80, 109, 255),
+
+      inset -20px 0 80px rgb(0, 2, 142),
+
+      inset 20px 0 300px rgb(80, 109, 255),
+
+      inset -20px 0 300px rgb(0, 2, 142),
+
+      0 0 50px rgb(80, 109, 255),
+      -10px 0 80px rgb(80, 109, 255),
+
+      10px 0 80px rgb(0, 2, 142);
+  }
+}
