@@ -22,7 +22,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #ff4343;
 }
 
 
@@ -51,10 +51,12 @@
   font-weight: 500;
   color: #f72f2f;
 }
+
+
 @media only screen and (max-width: 768px) {
   .nav_menu {
       position: fixed;
-      left: -100%;
+      left: -120%;
       top: 5rem;
       flex-direction: column;
       background-color: #fff;

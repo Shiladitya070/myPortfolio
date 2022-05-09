@@ -1,18 +1,18 @@
-import { Button } from '@mui/material'
+import { Button, IconButton } from '@mui/material'
 import React, { useState } from 'react'
 import styles from '../styles/navbar.module.css'
 import { Avatar } from '@mui/material'
 import { red } from '@mui/material/colors';
-
-
+import { AiOutlineMenu, AiFillCloseCircle } from 'react-icons/ai';
+import 'animate.css';
 
 
 function Navbar() {
   const dp_link = "https://avatars.githubusercontent.com/u/55788345?v=4"
-  const [active, setActive] = useState("false");
+  const [active, setActive] = useState(false);
   const ToggleClass = () => {
     setActive(!active); 
-    // console.log("😀", active);
+    console.log("😀", active);
    };
 
 
@@ -21,7 +21,7 @@ function Navbar() {
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <a href="#" class={styles.nav_logo}>
-        <Avatar sx={  { border:2, width: 80, height:80}}  src={dp_link}>S</Avatar>
+        <Avatar sx={  { border:2, width: 60, height:60}} className="animate__animated animate__rubberBand"  src={dp_link}>S</Avatar>
         </a>
         <ul class={`${styles.nav_menu} ${active ? styles.active : ""}`}>
           <li className={styles.nav_item}>
@@ -37,11 +37,13 @@ function Navbar() {
             <a href="#" className={styles.nav_link}>Contact</a>
           </li>
         </ul>
-        <div className={`${styles.hamburger} ${active ? styles.active : ""}`} onClick={ToggleClass}>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
+        <div className={`${styles.hamburger} ${active ? "" : styles.active}`} onClick={ToggleClass}>
+          <IconButton sx={{ color: red[500] }} size="large">
+            {active ?  <AiFillCloseCircle/> : <AiOutlineMenu/>}
+          </IconButton> 
         </div>
+
+
       </nav>
     </header>
 

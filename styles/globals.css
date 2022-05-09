@@ -3,9 +3,11 @@
 html,
 body {
   margin: 0;
+  color: #fff;
   scroll-behavior:smooth;
   background-color:#202020;
   font-family: 'Koulen', cursive;
+  -webkit-tap-highlight-color: transparent;
 }
 a {
   color: inherit;
