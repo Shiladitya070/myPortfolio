@@ -1,0 +1,18 @@
+.skills{
+    margin: 10px 40px 0px 40px;
+    font-size:5em;
+
+}
+
+
+.skills ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+.skills ul li:before {
+	content: "→";
+	position: absolute;
+	left: 0;
+}

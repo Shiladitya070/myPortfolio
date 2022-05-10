@@ -12,7 +12,7 @@ function Navbar() {
   const [active, setActive] = useState(false);
   const ToggleClass = () => {
     setActive(!active); 
-    console.log("😀", active);
+    // console.log("😀", active);
    };
 
 
@@ -20,21 +20,21 @@ function Navbar() {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <a href="#" class={styles.nav_logo}>
-        <Avatar sx={  { border:2, width: 60, height:60}} className="animate__animated animate__rubberBand"  src={dp_link}>S</Avatar>
+        <a href="#" className={styles.nav_logo}>
+        <Avatar sx={  { border:2, width: 80, height:80}} className="animate__animated animate__rubberBand"  src={dp_link}>S</Avatar>
         </a>
-        <ul class={`${styles.nav_menu} ${active ? styles.active : ""}`}>
+        <ul className={`${styles.nav_menu} ${active ? styles.active : ""}`}>
           <li className={styles.nav_item}>
-            <a href="#" className={styles.nav_link}>Services</a>
+            <a href="#" className={styles.nav_link}>Services↗</a>
           </li>
           <li className={styles.nav_item}>
-            <a href="#" className={styles.nav_link}>Blog</a>
+            <a href="#" className={styles.nav_link}>Blog↗</a>
           </li>
           <li className={styles.nav_item}>
-            <a href="#" className={styles.nav_link}>About</a>
+            <a href="#" className={styles.nav_link}>About↗</a>
           </li>
           <li className={styles.nav_item}>
-            <a href="#" className={styles.nav_link}>Contact</a>
+            <a href="#" className={styles.nav_link}>Contact↗</a>
           </li>
         </ul>
         <div className={`${styles.hamburger} ${active ? "" : styles.active}`} onClick={ToggleClass}>

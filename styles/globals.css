@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 html,
 body {
@@ -6,15 +6,13 @@ body {
   color: #fff;
   scroll-behavior:smooth;
   background-color:#202020;
-  font-family: 'Koulen', cursive;
+  font-family: 'Varela Round', sans-serif;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
   text-decoration: none;
-}
-h1{
-  z-index: 1;
 }
 
 li {
